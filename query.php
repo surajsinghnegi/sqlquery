@@ -1,0 +1,2 @@
+<!-- get data weekwise -->
+select `main_timestamp`  ,week(`main_timestamp`) Week, month(`main_timestamp`) month, count(`main_min`), year(`main_timestamp`) Year, sum(main_amount) from table name group by week(`main_timestamp`), year(`main_timestamp`) order by main_timestamp desc
